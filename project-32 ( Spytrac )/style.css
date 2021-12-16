@@ -1,0 +1,816 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6,p,a,span{
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/*------------------------------------header menu----------------------------------*/
+
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   margin: 10px 0px;
+
+   position: sticky;
+   top: 0px;
+   z-index: 5;
+   background-color: white;
+}
+.btn{
+    flex-basis: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    flex-basis: 15%;
+    margin: 0px 30px;
+}
+
+.head{
+    flex-basis: 60%;
+   
+}
+.head ul{
+    display: flex;
+}
+.head ul li{
+    list-style: none;
+    margin: 0px 25px;
+}
+.head ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+.head ul li a img{
+    height: 18px;
+    width: 25px;
+}
+
+.drop-down{
+
+}
+
+.all-lan{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:rgba(231,242,244,255) ;
+    border-radius: 6px;
+  
+    position: absolute;
+    top: 30px;
+    left: 85px;
+    z-index: 5;
+    visibility: hidden;
+}
+.drop-down:hover .all-lan{
+    visibility: visible;
+
+}
+
+.lan-one{
+    padding: 26px 8px;
+
+}
+.lan-one li{
+    padding: 10px;
+
+}
+
+.lan-one li a{
+    display: flex;
+    
+}
+.lan-one li a img{
+    margin: 0px 10px;
+}
+.lan-two li a img{
+    margin: 0px 10px;
+}
+
+
+.lan-two{
+    padding: 26px 12px;
+}
+.lan-two li{
+    padding: 10px;
+
+}
+.lan-two li a{
+    display: flex;
+}
+
+
+.arrow i{
+font-size: 14px;
+margin: 0px 4px;
+
+}
+
+.lan {
+    display: flex;
+}
+
+.left{
+
+}
+.left a{
+    text-decoration: none;
+    padding: 12px 24px;
+    border: 2px solid rgba(3,108,137,255);
+    border-radius: 5px;
+    color: rgba(3,108,137,255);
+    transition: 1s;
+}
+.left a:hover{
+    background-color: rgba(3,108,137,255);
+    color: white;
+}
+
+.right{
+
+}
+.right a{
+    text-decoration: none;
+    padding: 12px 24px;
+    background-color: rgba(3,108,137,255);
+    border-radius: 5px;
+    color: white;
+    transition: .5s;
+}
+.right a:hover{
+    background-color:rgb(0, 170, 255) ;
+}
+
+
+/*------------------------------background----------------------------*/
+
+.background{
+    background: url(https://i.ibb.co/cvRsdMW/pexels-rostislav-uzunov-5011647.jpg );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 850px;
+    width: 100%;
+    position: relative;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+}
+
+.bg-middle{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+
+    display: inline-flex;
+    justify-content: space-around;
+    
+}
+
+.bg-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.bg-logo img{
+    color: white;
+    height: 136px;
+    width: 114px;
+}
+.bg-logo h1{
+    font-size: 50px;
+    color: white;
+    font-weight: 500;
+  
+}
+.bg-right img{
+    height: 450px;
+    width: 600px;
+}
+
+.bg-left-list{
+    margin: 40px 20px;
+}
+.bg-left-list h1{
+    font-size: 28px;
+    color: white;
+    font-weight: 400;
+}
+
+.bg-list{
+    margin-top: 15px;
+}
+.bg-list ul{
+
+}
+.bg-list ul li{
+    list-style: none;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin: 8px 0px;
+    font-weight: 400;
+}
+span{
+    color:rgb(0, 170, 255) ;
+    font-size: 20px;
+}
+
+.bg-btn{
+    margin: 50px 20px;
+    display: flex;
+}
+.bg-btn-left{
+
+}
+.bg-btn-left a{
+    text-decoration: none;
+    padding: 20px 75px;
+    background-color: white;
+    color: rgba(3,108,137,255);
+    font-weight: 600;
+    border-radius: 8px;
+
+}
+.or{
+    color: white;
+    margin: 0px 15px;
+}
+.bg-btn-right{
+
+}
+.bg-btn-right a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    word-spacing: 6px;
+    transition: .5s;
+}
+.bg-btn-right a:hover{
+    color:rgb(0, 170, 255) ;
+}
+
+.bg-middle-last{
+
+    margin: 0px 20px;
+}
+.bg-middle-last h3{
+    color: white;
+
+}
+
+.arow a{
+    font-weight: 600;
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+}
+
+.bg-right {
+    margin-top: 95px;
+}
+
+.last-arrow {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    
+}
+.last-arrow a{
+    font-weight: 600;
+    font-size: 25px;
+    color: white;
+}
+
+
+/*-----------------------------------item section-------------------------------------*/
+
+.items{
+    width: 85%;
+    margin: auto;
+    margin-top: 70px;
+}
+
+.item-title{
+
+}
+.item-title h1{
+    text-align: center;
+    font-weight: 300;
+    font-size: 37px;
+    width: 70%;
+    margin: auto;
+}
+
+.all-item{
+    margin-top: 50px;
+}
+
+.item-part{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 20px;
+}
+
+.part-logo{
+    
+}
+.part-logo img{
+    max-width: 60px;
+    margin: auto;
+    color: red;
+}
+
+.part-one{
+    text-align: center;
+}
+
+.part-two{
+    text-align: center;
+}
+
+.part-three{
+    text-align: center;
+}
+.part-text{
+
+}
+.part-text p{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+/*--------------------------------------------big item section-------------------------------*/
+
+.big-item{
+    background-color: rgba(0,0,0,.1);
+   
+    margin-top: 200px;
+    padding-bottom: 40px;
+}
+
+.btn-fixed{
+    text-align: center;
+
+}
+
+.left-fixed{
+  display: inline-block;
+}
+.left-fixed a{
+    text-decoration: none;
+    padding: 20px 75px;
+    background-color: rgba(3,108,137,255);
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+
+   
+}
+.right-fixed{
+    display: inline-block;
+
+}
+.right-fixed a{
+    text-decoration: none;
+    color:rgba(3,108,137,255) ;
+    font-weight: 600;
+    word-spacing: 6px;
+    transition: .5s;
+}
+.orfixed{
+    color: gray;
+}
+
+.big-item-txt{
+    margin-top: 150px;
+}
+
+.big-item-txt h4{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+
+.big-item-txt h1{
+    text-align: center;
+    margin: 15px;
+    font-weight: 500;
+
+}
+
+
+.big-item-txt P{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+
+}
+
+.big-all-item{
+    margin-top: 80px;
+}
+
+.big-line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 70px 60px;
+}
+.bg-top{
+    display: flex;
+    align-items: center;
+}
+.bg-logo{
+    display: inline-block;
+    font-size: 28px;
+    color:rgba(3,108,137,255) ;
+
+}
+.bg-titel{
+    display: inline-block;
+    
+}
+.bg-titel h3{
+    display: inline-block;
+    margin: 0px 12px;
+    font-weight: 500;
+    font-size: 16px;
+    
+}
+
+.bg-bottom{
+    margin-top: 20px;
+}
+.bg-one{
+    margin: 0px 25px;
+}
+.bg-bottom p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.wav svg{
+    background-color: transparent;
+}
+.big-item{
+    position: relative;
+}
+.wav{
+    position: absolute;
+    top: -299px;
+    left: 0;
+   
+}
+
+
+/*-------------------------------scroll background---------------------------------*/
+
+.scroll-bg{
+    background: url(https://i.ibb.co/G0xxHsy/pexels-carlos-oliva-3586966.jpg );
+    height: 650px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    background-attachment: fixed;
+}
+
+.opacity{
+    height: 650px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 38, 153,.4);
+    z-index: 5;
+
+}
+
+.opacity-img{
+    background: url(https://i.ibb.co/wsFSKmZ/group1.png );
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 800px;
+    margin:54px auto;
+    
+}
+
+
+.scroll-txt{
+
+}
+.scroll-txt h1{
+    text-align: center;
+    margin-top: 12px;
+    color: white;
+}
+.scroll-txt p{
+    text-align: center;
+    margin-top: 6px;
+    color: white;
+}
+
+
+/*-------------------------------------card--------------------------------*/
+
+.card{
+    background-color: rgba(0,0,0,.1);
+    width: 100%;
+    padding: 20px 0px;
+    position: relative;
+}
+
+.card-txt h1{
+    text-align: center;
+    margin-top: 22px;
+    font-size: 28px;
+}
+
+.card-icon{
+
+}
+.card-icon ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.card-icon ul li{
+    list-style: none;
+}
+.card-icon ul li i{
+    color: goldenrod;
+    margin: 14px 10px;
+}
+
+.main-card{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-icon{
+
+}
+.main-icon ul{
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.main-icon ul li{
+    list-style: none;
+
+}
+.main-icon ul li i{
+    color: goldenrod;
+
+}
+
+.main-card-one{
+   box-shadow: 2px 2px 2px 4px rgba(0,0,0,.3);
+    height: 520px;
+    width: 350px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.card-img{
+    text-align: center;
+    margin-top: 65px;
+}
+.card-img img{
+    
+}
+.main-icon h5{
+text-align: center;
+font-size: 17px;
+margin: 6px;
+}
+
+.main-txt{
+    margin-top: 30px;
+
+}
+.main-txt p{
+    color: gray;
+    text-align: center;
+    line-height: 25px;
+
+}
+
+.main-card-one{
+    position: relative;
+    overflow: hidden;
+}
+
+.design{
+    height: 90px;
+    width: 250px;
+    background-color:rgba(1,113,135,255) ;
+    transform: rotate(140deg);
+    position: absolute;
+    top: 0px;
+    left: -150px;
+    
+}
+
+
+
+/*---------------------------------last bg------------------------------*/
+
+.last-bg{
+    background: url(.//image/pexels-carlos-oliva-3586966.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
+    position: relative;
+}
+
+.last-bg-opacity{
+    height: 300px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:black ;
+   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.last-wave{
+    position: absolute;
+    bottom: -190px;
+    left: 0;
+    background-color: rgba(0,0,0,.1);
+}
+
+.last-txt{
+    margin: 30px 60px;
+
+}
+.last-txt h1{
+    width: 75%;
+    text-align: center;
+font-size: 30px;
+    color: white;
+}
+.last-txt h2{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+   width: 75%;
+   margin-top: 30px;
+
+}
+
+.Cng{
+   margin-top: 80px;
+   margin-left: 160px;
+}
+
+.cng a{
+    background-color:rgba(1,113,135,255) ;
+    color: white;
+}
+
+.last-right img{
+   margin-left: -150px;
+   margin-top: 30px;
+}
+
+
+/*------------------------------------footer-----------------------------------*/
+
+.footer{
+   position: relative;
+   margin-top: 190px;
+    background-color: rgba(0,0,0,.1);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-part{
+
+}
+.footer-part h1{
+    font-size: 20px;
+
+}
+.footer-part ul{
+    margin-top: 20px;
+
+}
+.footer-part ul li{
+    list-style: none;
+    margin: 6px 0px;
+
+}
+.footer-part ul li a{
+    text-decoration: none;
+    color: gray;
+    font-weight: 500;
+    font-size: 14px;
+    transition: 5s;
+    padding: 4px 8px;
+    transition: .5s;
+}
+.footer-part ul li:hover{
+    background-color: white;
+    color:rgb(9, 9, 116) ;
+    border-radius: 5px;
+}
+
+.footer-part img{
+    padding: 10px 0px;
+   
+}
+.footer-logo{
+
+}
+.footer-logo ul{
+    display: flex;
+
+}
+.footer-logo ul li{
+    margin: 10px 10px;
+}
+.footer-logo ul li i{
+    font-size: 35px;
+    color: gray;
+    transition: .5s;
+    padding: 0;
+    margin: 0;
+}
+.footer-logo ul li i:hover{
+    color:rgba(1,113,135,255) ;
+   
+}
+
+.footer-end{
+    background-color: rgba(0,0,0,.2);
+    padding: 15px;
+}
+
+.end-txt{
+    margin: 0px 90px;
+}
+
+.legal{
+    display: inline-block;
+    color: black;
+    font-weight: 500;
+    font-size: 12px;
+}
+.end-txt p{
+    display: inline-block;
+    font-size: 12px;
+}
+.end-p{
+    margin-top: 18px;
+}
+
+
+/*------------------------------------scroll system--------------------------------*/
+
+.scrollTop{
+    position: fixed;
+    background: url(./image/82246-angle-harper-symbol-roy-arrow-drawing.png);
+    height: 60px;
+    width: 60px;
+}
